@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-kata-1",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:echocat/nodejs-kata-1.git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "mocha": "^5.1.1",
+    "sinon": "^5.0.7"
+  },
+  "scripts": {
+    "start": "node $NODE_DEBUG_OPTION src/index.js",
+    "lint": "eslint .",
+    "test": "mocha './@(test|src)/**/*.test.js'"
+  }
+}
