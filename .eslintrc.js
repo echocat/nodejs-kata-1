@@ -34,7 +34,7 @@ module.exports = {
     'one-var': ['error', { 'uninitialized': 'always', 'initialized': 'never' }],
     'padded-blocks': ['error', 'never'],
     'quotes': ['error', 'single'],
-    'quote-props': ['error', 'as-needed'],
+    'quote-props': ['error', 'consistent'],
     'semi': ['error', 'never'],
     'sort-imports': 'off',
     'strict': 'off'
