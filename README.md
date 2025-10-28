@@ -127,14 +127,13 @@ You have to implement an abstracted and simple library system.
    npm start
    ```
 
-
 ### What's the structure of the boilerplate?
 
 > **Important!** `react` and `react-dom` are already included in `package.json`. If you want to use other libraries/frameworks, you have to install and include them manually.
 
 1. [`tsup`](https://tsup.egoist.dev/) for building and bundling:
-    - entry point is `src/index.ts` file.
-    - bundle is being written in `dist/index.js`.
+   - entry point is `src/index.ts` file.
+   - bundle is being written in `dist/index.js`.
 
 2. [`vitest`](https://vitest.dev/) for testing.
 
