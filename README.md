@@ -2,13 +2,14 @@
 
 Code kata in Node.js where you have to write a library of books and magazines.
 
-[A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition.](https://en.wikipedia.org/wiki/Kata_(programming))
+[A code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition.](<https://en.wikipedia.org/wiki/Kata_(programming)>)
 
-* [Topic](#topic)
-* [Frame conditions](#frame-conditions)
-* [Tasks](#tasks)
-* [Procedure](#procedure)
-* [License](#license)
+- [Topic](#topic)
+- [Frame conditions](#frame-conditions)
+- [Tasks](#tasks)
+- [Procedure](#procedure)
+- [FAQ](#faq)
+- [License](#license)
 
 ## Topic
 
@@ -39,15 +40,14 @@ You have to implement an abstracted and simple library system.
 6. Given resources:
 
    > **Hint:** There is a reason why there are so many books and authors in german with [umlauts](https://en.wikipedia.org/wiki/Germanic_umlaut).
-
-   * [`authors.csv`](data/authors.csv): Contains authors with its `email`, `firstName` and `lastName`.
-   * [`books.csv`](data/books.csv): Contains books with its `title`, `description`, one or more `authors` and an `isbn`.
-   * [`magazines.csv`](data/magazines.csv): Contains magazines with its `title`, one or more `authors`, a `publishedAt` and an `isbn`.
+   - [`authors.csv`](data/authors.csv): Contains authors with its `email`, `firstName` and `lastName`.
+   - [`books.csv`](data/books.csv): Contains books with its `title`, `description`, one or more `authors` and an `isbn`.
+   - [`magazines.csv`](data/magazines.csv): Contains magazines with its `title`, one or more `authors`, a `publishedAt` and an `isbn`.
 
 ## Tasks
 
-* [Main tasks](#main-tasks)
-* [Optional tasks](#optional-tasks)
+- [Main tasks](#main-tasks)
+- [Optional tasks](#optional-tasks)
 
 ### Main tasks
 
@@ -78,7 +78,6 @@ You have to implement an abstracted and simple library system.
 ## Procedure
 
 1. Get the code. There are several ways for it:
-
    1. With fork (makes it possible to preserve your work):
       1. [Fork this repository](https://github.com/echocat/nodejs-kata-1/fork)
       2. Clone this fork to your computer:
@@ -88,6 +87,7 @@ You have to implement an abstracted and simple library system.
          ```
 
    2. Clone this repository with local branch:
+
       ```bash
       git clone https://github.com/echocat/nodejs-kata-1.git
       git checkout -b run-<yourname>-<iteration number>
@@ -108,17 +108,57 @@ You have to implement an abstracted and simple library system.
 
 ## FAQ
 
+- [How to run your application?](#how-to-run-your-application)
+- [What's the structure of the boilerplate?](#whats-the-structure-of-the-boilerplate)
+- [How to lint your code?](#how-to-lint-your-code)
+- [How to run your tests?](#how-to-run-your-tests)
+
 ##### How to run your application?
 
-```bash
-npm run start
-```
+1. Install dependencies:
 
-##### How to run your tests?
+   ```bash
+   npm i
+   ```
+
+2. Run `start` script:
+
+   ```bash
+   npm start
+   ```
+
+### What's the structure of the boilerplate?
+
+> **Important!** `react` and `react-dom` are already included in `package.json`. If you want to use other libraries/frameworks, you have to install and include them manually.
+
+1. [`tsup`](https://tsup.egoist.dev/) for building and bundling:
+   - entry point is `src/index.ts` file.
+   - bundle is being written in `dist/index.js`.
+
+2. [`vitest`](https://vitest.dev/) for testing.
+
+3. [`eslint`](https://eslint.org/) for code checking.
+
+4. [`prettier`](https://prettier.io/) for formatting the code.
+
+### How to lint your code?
+
+For code check:
 
 ```bash
 npm run lint
-npm run test
+```
+
+To fix the linting errors:
+
+```bash
+npm run lint:fix
+```
+
+### How to run your tests?
+
+```bash
+npm test
 ```
 
 ## License

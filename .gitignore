@@ -1,5 +1,8 @@
 .idea/
 node_modules/
+dist/
+coverage/
+.claude
 
 .DS_Store
 npm-debug.log*
