@@ -49,7 +49,7 @@
     "eslint-plugin-yml": "^3.5.0",
     "globals": "^17.6.0",
     "jiti": "^2.7.0",
-    "prettier": "^3.8.4",
+    "prettier": "^3.9.3",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.62.0",
